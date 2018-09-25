@@ -1,0 +1,26 @@
+1 - Install Node.JS
+
+2 - Install expo cli
+
+    npm install exp --global
+
+3 - Create your react native project
+    exp init my-new-projec
+
+4. Run your react native project
+   exp start
+
+   Se der erro de rede, usar o comando abaixo:
+
+   exp start --tunnel --dev
+
+2:27 statusbar
+
+<Button
+                style={styles.btn}
+                onPress={() =>
+                    this.props.navigation.navigate('DeckItem', {
+                      entryId: deck
+                    })}
+                title='View deck'
+                />
