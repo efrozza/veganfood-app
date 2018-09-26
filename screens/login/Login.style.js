@@ -6,6 +6,12 @@ export const Title = styled(Text)`
 `
 
 export const LoginBox = styled(Container)`
-    padding-horizontal: 50px;
-    padding-top:80px;
+    padding-horizontal: 25px;
+    padding-top: 50px;
+`
+
+export const ViewButtons = styled.View`
+  flex-direction: row;
+  justifyContent: center;
+  alignItems: center;
 `
