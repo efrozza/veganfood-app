@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components/native'
 import { TouchableOpacity } from 'react-native'
-import { green, orange } from './colors'
+import { green, orange, blue } from './colors'
 import { Text } from './typeText'
 
 export const TextInput = styled.TextInput`padding-vertical: 5px;`
@@ -13,10 +13,17 @@ const ButtonBox = styled.View`
   padding-vertical: 10px;
   border-radius: 4px;
   margin: 5px;
+
+  ${({ std }) =>
+    std &&
+    css`
+  background-color: ${green};    
+`};
+
   ${({ info }) =>
     info &&
     css`
-    background-color: ${green};    
+    background-color: ${blue};    
 `};
 
   ${({ action }) =>

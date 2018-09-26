@@ -1,10 +1,18 @@
 import React from 'react'
-import { Container, Text } from '../../styles'
+import { Text } from '../../styles'
+import { ListBox, ViewButtons } from './ListRestaurant.style'
+import { Button } from '../../styles'
 
 export default function ListRestaurant ({ navigation }) {
   return (
-    <Container>
-      <Text h2>List Restaurant</Text>
-    </Container>
+    <ListBox>
+      <Text h2>Choose the best restaurants around you</Text>
+      <Text h3>Sort by:</Text>
+      <ViewButtons>
+        <Button info title={'price'} />
+        <Button action title={'price'} />
+        <Button std title={'distance'} />
+      </ViewButtons>
+    </ListBox>
   )
 }

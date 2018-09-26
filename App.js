@@ -2,9 +2,8 @@ import { createStackNavigator } from 'react-navigation'
 import Login from './screens/login/Login'
 import Register from './screens/register/Register'
 import ListRestaurant from './screens/listRestaurant/ListRestaurant'
-import { green } from './styles/colors'
 
-export default createStackNavigator(
+const AppNavigation = createStackNavigator(
   {
     Register: {
       screen: Register
@@ -17,11 +16,12 @@ export default createStackNavigator(
     }
   },
   {
-    initialRouteName: 'ListRestaurant',
+    initialRouteName: 'Login',
     header: null,
     navigationOptions: {
       title: 'Vegan food App'
-    },
-    headerTintColor: green
+    }
   }
 )
+
+export default AppNavigation

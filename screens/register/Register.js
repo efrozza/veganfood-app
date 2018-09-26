@@ -18,7 +18,11 @@ export default function Register ({ navigation }) {
       <FormControl>
         <TextInput placeholder={'password'} type='password' secureTextEntry />
       </FormControl>
-      <Button action title={'Register'} />
+      <Button
+        action
+        title={'Register'}
+        onPress={() => navigation.navigate('ListRestaurant')}
+      />
     </RegisterBox>
   )
 }

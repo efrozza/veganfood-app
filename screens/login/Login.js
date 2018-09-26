@@ -13,7 +13,7 @@ export default function Login ({ navigation }) {
         <TextInput placeholder={'password'} type='password' secureTextEntry />
       </FormControl>
       <ViewButtons>
-        <Button info title={'Login'} />
+        <Button std title={'Login'} />
         <Button
           action
           title={'Register'}
