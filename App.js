@@ -2,6 +2,7 @@ import { createStackNavigator } from 'react-navigation'
 import Login from './screens/login/Login'
 import Register from './screens/register/Register'
 import ListRestaurant from './screens/listRestaurant/ListRestaurant'
+import RestaurantDetail from './screens/restaurantDetail/RestaurantDetail'
 
 const AppNavigation = createStackNavigator(
   {
@@ -13,6 +14,9 @@ const AppNavigation = createStackNavigator(
     },
     ListRestaurant: {
       screen: ListRestaurant
+    },
+    RestaurantDetail: {
+      screen: RestaurantDetail
     }
   },
   {
