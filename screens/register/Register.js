@@ -5,7 +5,7 @@ import { RegisterBox, Title } from './Register.style'
 export default function Register ({ navigation }) {
   return (
     <RegisterBox>
-      <Title h2>Register!</Title>
+      <Title h2>Register</Title>
       <FormControl>
         <TextInput placeholder={'name'} />
       </FormControl>

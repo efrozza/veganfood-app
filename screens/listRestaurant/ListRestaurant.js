@@ -7,12 +7,12 @@ import { FlatList, Image, View, TouchableOpacity } from 'react-native'
 export default function ListRestaurant ({ navigation }) {
   return (
     <ListBox>
-      <Text h2>Choose the best restaurants around you</Text>
+      <Text h2>Choose the best restaurants around you!</Text>
       <Text h3>Sort by:</Text>
       <ViewButtons>
         <Button info title={'price'} />
-        <Button action title={'price'} />
-        <Button std title={'distance'} />
+        <Button action title={'distance'} />
+        <Button std title={'rate'} />
       </ViewButtons>
       <FlatList
         horizontal={false}
@@ -24,7 +24,14 @@ export default function ListRestaurant ({ navigation }) {
           { key: 'Restaurant D' },
           { key: 'Restaurant E' },
           { key: 'Restaurant F' },
-          { key: 'Restaurant G' }
+          { key: 'Restaurant G' },
+          { key: 'Restaurant G' },
+          { key: 'Restaurant H' },
+          { key: 'Restaurant I' },
+          { key: 'Restaurant J' },
+          { key: 'Restaurant L' },
+          { key: 'Restaurant M' },
+          { key: 'Restaurant N' }
         ]}
         renderItem={({ item }) =>
           <View style={{ margin: 3 }}>
