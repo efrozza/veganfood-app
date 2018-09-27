@@ -1,8 +1,13 @@
 import React from 'react'
 import { Text } from '../../styles'
-import { ListBox, ViewButtons } from './ListRestaurant.style'
+import {
+  ListBox,
+  ViewButtons,
+  Image,
+  ViewImages
+} from './ListRestaurant.style'
 import { Button } from '../../styles'
-import { FlatList, Image, View, TouchableOpacity } from 'react-native'
+import { FlatList, TouchableOpacity } from 'react-native'
 
 export default function ListRestaurant ({ navigation }) {
   return (
@@ -18,7 +23,10 @@ export default function ListRestaurant ({ navigation }) {
         horizontal={false}
         numColumns={3}
         data={[
-          { key: 'Restaurant A', image: require('../../imgs/food-1.png') },
+          {
+            key: 'Restaurant A',
+            image: require('../../imgs/food-1.png')
+          },
           { key: 'Restaurant B', image: require('../../imgs/food-2.png') },
           { key: 'Restaurant C', image: require('../../imgs/food-3.png') },
           { key: 'Restaurant D', image: require('../../imgs/food-4.png') },
@@ -34,7 +42,7 @@ export default function ListRestaurant ({ navigation }) {
           { key: 'Restaurant N', image: require('../../imgs/food-4.png') }
         ]}
         renderItem={({ item }) =>
-          <View style={{ margin: 3 }}>
+          <ViewImages>
             <Text h2>
               {item.key}
             </Text>
@@ -44,7 +52,7 @@ export default function ListRestaurant ({ navigation }) {
             >
               <Image source={item.image} />
             </TouchableOpacity>
-          </View>}
+          </ViewImages>}
       />
     </ListBox>
   )
