@@ -1,9 +1,16 @@
+import React from 'react'
 import { createStackNavigator } from 'react-navigation'
 import Login from './screens/login/Login'
 import Register from './screens/register/Register'
 import ListRestaurant from './screens/listRestaurant/ListRestaurant'
 import RestaurantDetail from './screens/restaurantDetail/RestaurantDetail'
 import { green, white } from './styles/colors'
+import { View, Text } from 'react-native'
+
+const HeaderSocialMedia = () =>
+  <View>
+    <Text>Icon</Text>
+  </View>
 
 const AppNavigation = createStackNavigator(
   {
@@ -27,7 +34,8 @@ const AppNavigation = createStackNavigator(
       headerTintColor: white,
       headerStyle: {
         backgroundColor: green
-      }
+      },
+      headerRight: <HeaderSocialMedia />
     }
   }
 )
