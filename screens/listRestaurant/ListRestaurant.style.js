@@ -11,8 +11,10 @@ export const ViewButtons = styled.View`
   justifyContent: center;
   alignItems: center;
 `
-
-export const ViewImages = styled.View`margin: 3px;`
+export const ViewImages = styled.View`
+  margin: 3px;
+  alignItems: center;
+`
 
 export const Image = styled.Image`
   justifyContent: center;

@@ -1,6 +1,9 @@
 import styled, { css } from 'styled-components/native'
-import { h1FontSize, h2FontSize, h3FontSize } from './fonts'
 import { white } from './colors'
+
+export const h1FontSize = '20px'
+export const h2FontSize = '18px'
+export const h3FontSize = '16px'
 
 export const Text = styled.Text`
   ${({ h1 }) =>

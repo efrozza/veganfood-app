@@ -12,7 +12,7 @@ export const FormControl = styled.View`margin-bottom: 24px;`
 
 const ButtonBox = styled.View`
   align-items: center;
-  width: 110px;
+  width: 105px;
   padding-vertical: 10px;
   border-radius: 4px;
   margin: 5px;

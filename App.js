@@ -35,7 +35,7 @@ const AppNavigation = createStackNavigator(
       headerStyle: {
         backgroundColor: green
       },
-      headerRight: <HeaderSocialMedia />
+      headerRight: ''
     }
   }
 )
