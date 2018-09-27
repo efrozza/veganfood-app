@@ -18,20 +18,20 @@ export default function ListRestaurant ({ navigation }) {
         horizontal={false}
         numColumns={3}
         data={[
-          { key: 'Restaurant A' },
-          { key: 'Restaurant B' },
-          { key: 'Restaurant C' },
-          { key: 'Restaurant D' },
-          { key: 'Restaurant E' },
-          { key: 'Restaurant F' },
-          { key: 'Restaurant G' },
-          { key: 'Restaurant G' },
-          { key: 'Restaurant H' },
-          { key: 'Restaurant I' },
-          { key: 'Restaurant J' },
-          { key: 'Restaurant L' },
-          { key: 'Restaurant M' },
-          { key: 'Restaurant N' }
+          { key: 'Restaurant A', image: require('../../imgs/food-1.png') },
+          { key: 'Restaurant B', image: require('../../imgs/food-2.png') },
+          { key: 'Restaurant C', image: require('../../imgs/food-3.png') },
+          { key: 'Restaurant D', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant E', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant F', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant G', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant G', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant H', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant I', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant J', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant L', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant M', image: require('../../imgs/food-4.png') },
+          { key: 'Restaurant N', image: require('../../imgs/food-4.png') }
         ]}
         renderItem={({ item }) =>
           <View style={{ margin: 3 }}>
@@ -39,9 +39,10 @@ export default function ListRestaurant ({ navigation }) {
               {item.key}
             </Text>
             <TouchableOpacity
-              onPress={() => navigation.navigate('RestaurantDetail')}
+              onPress={() =>
+                navigation.navigate('RestaurantDetail', { restaurant: item })}
             >
-              <Image source={require('../../imgs/food-1.png')} />
+              <Image source={item.image} />
             </TouchableOpacity>
           </View>}
       />
